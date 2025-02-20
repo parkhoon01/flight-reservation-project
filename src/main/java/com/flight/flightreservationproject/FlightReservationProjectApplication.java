@@ -1,4 +1,4 @@
-package com.example.flightreservationproject;
+package com.flight.flightreservationproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

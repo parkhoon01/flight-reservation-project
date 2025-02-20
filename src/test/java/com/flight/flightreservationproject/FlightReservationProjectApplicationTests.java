@@ -1,4 +1,4 @@
-package com.example.flightreservationproject;
+package com.flight.flightreservationproject;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
