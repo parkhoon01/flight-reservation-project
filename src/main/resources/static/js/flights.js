@@ -6,7 +6,7 @@ async function getFlights() {
     try {
         const response = await fetch(API_BASE_URL);
         if(!response.ok){
-            throw new Error(`HTTP error! status: ${response.status}`);
+            console.error(`HTTP error! status: ${response.status}`);
         }
         const flights = await response.json();
         displayFlights(flights);
