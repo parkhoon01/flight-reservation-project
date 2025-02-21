@@ -18,12 +18,10 @@ public class UserController {
 
     @PostMapping("/join")
     public String join(@RequestBody JoinRequest joinRequest){
-        String id = joinRequest.getId();
-        String password = joinRequest.getPassword();
 
-        String result = userService.join(id, password);
+        String result = userService.join(joinRequest);
 
-        if(result.equals("success")){
+        if("success".equalsIgnoreCase(result)){
             return "success";
         } else{
             return "fail";

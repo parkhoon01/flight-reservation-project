@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>항공편 관리</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<h1>항공편 목록</h1>
+<button onclick="showAddFlightForm()">새 항공편 추가</button>
+<table id="flightsTable">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>항공편 번호</th>
+        <th>출발지</th>
+        <th>도착지</th>
+        <th>출발 날짜</th>
+        <th>도착 날짜</th>
+        <th>항공사 명</th>
+        <th>게이트 번호</th>
+        <th>비행 소요시간</th>
+        <th>비행기 최대 좌석 수</th>
+        <th>현재 상태</th>
+        <th>작업</th>
+    </tr>
+    </thead>
+    <tbody id="flightsList">
+    <!-- 여기에 항공편 목록이 동적으로 추가됩니다 -->
+    </tbody>
+</table>
+
+<div id="addFlightForm" style="display:none;">
+    <h2>새 항공편 추가</h2>
+    <form id="newFlightForm">
+        <input type="text" id="flight_number" placeholder="항공편 번호" required>
+        <input type="text" id="origin_airport" placeholder="출발지" required>
+        <input type="text" id="destination_airport" placeholder="도착지" required>
+        <input type="datetime-local" id="departure_date" required>
+        <input type="datetime-local" id="arrival_date" required>
+        <input type="text" id="flight_company_name" placeholder="항공사 명" required>
+        <input type="text" id="gate_number" placeholder="게이트 번호" required>
+        <input type="number" id="max_seat_capacity" placeholder="최대 좌석 수" required>
+        <input type="text" id="current_status_id" placeholder="현재 상태" required>
+        <button type="submit">추가</button>
+    </form>
+</div>
+
+<script src="js/flights.js"></script>
+</body>
+</html>
