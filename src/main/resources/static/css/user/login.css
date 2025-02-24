@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.links-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.links-container a:hover {
+    text-decoration: underline;
+}
+
+/* 간편 로그인 섹션 스타일 */
+.simple-login-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.simple-login-container p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-btn {
+    width: 80px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    color: white;
+}
+
+/* 각 소셜 로그인 버튼 색상 */
+.kakao-login {
+    background-color: #fee500;
+    color: #3c1e1e;
+}
+
+.naver-login {
+    background-color: #03c75a;
+    color: white;
+}
+
+.google-login {
+    background-color: #db4437;
+    color: white;
+}
+
+.social-btn:hover {
+    opacity: 0.9;
+}

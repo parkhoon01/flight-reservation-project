@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예약 확인</title>
+    <link rel="stylesheet" href="../css/confirm_book.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+
+
+<!-- 예약 확인 섹션 -->
+<section class="confirmation-section">
+    <h2>예약이 완료되었습니다!</h2>
+    <p>아래 예약 정보를 확인하세요.</p>
+    <div class="reservation-details">
+        <p><strong>예약 번호:</strong> <span id="reservation-id">123456789</span></p>
+        <p><strong>탑승객 이름:</strong> <span id="passenger-name">홍길동</span></p>
+        <p><strong>출발지:</strong> <span id="departure">서울 (ICN)</span></p>
+        <p><strong>도착지:</strong> <span id="destination">뉴욕 (JFK)</span></p>
+        <p><strong>출발 날짜:</strong> <span id="departure-date">2025-06-01</span></p>
+        <p><strong>좌석 등급:</strong> <span id="seat-class">이코노미</span></p>
+    </div>
+    <button class="home-btn" onclick="window.location.href='main.html'">메인 페이지로 이동</button>
+</section>
+
+
+<script src="../js/confirm_book.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>
