@@ -5,6 +5,8 @@ import lombok.Data;
 @Data   // getter, setter, toString 등을 자동 생성함
 public class FlightRequest {
 
+    private int flightId;
+
     private int flight_number;
 
     private String departure_date;

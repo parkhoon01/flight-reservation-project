@@ -33,10 +33,6 @@ function displayFlights(flights) {
                 <td>${calculateFlightDuration(flight.arrival_date, flight.departure_date)}</td>
                 <td>${flight.max_seat_capacity}</td>
                 <td>${flight.current_status_id}</td>
-                <td>
-                    <button onclick="viewFlightDetail(${flight.flight_id})">상세보기</button>
-                    <button onclick="deleteFlight(${flight.flight_id})">삭제</button>
-                </td>
             </tr>
         `;
         flightsList.innerHTML += row;
@@ -95,8 +91,12 @@ async function addFlight(event) {
 async function deleteFlight(id) {
     if (confirm('이 항공편을 삭제하시겠습니까?')) {
         try {
-            const response = await fetch(`${API_BASE_URL}/${id}`, {
-                method: 'DELETE'
+            const response = await fetch(`${API_BASE_URL}/delete`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(id)
             });
             if (response.ok) {
                 getFlights(); // 목록 새로고침

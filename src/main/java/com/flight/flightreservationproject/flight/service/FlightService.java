@@ -10,4 +10,9 @@ public interface FlightService {
     String createFlight(FlightRequest flightRequest);
 
     List<Flight> getAllFlights();
+
+    String deleteFlight(int flightId);
+
+    String updateFlight(int flightId, FlightRequest flightRequest);
+
 }
