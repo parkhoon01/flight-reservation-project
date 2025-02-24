@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>항공권 예약</title>
+    <link rel="stylesheet" href="../css/booking.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+
+
+<!-- 예약 섹션 -->
+<section class="booking-section">
+    <h2>예약 정보 입력</h2>
+    <form id="booking-form" class="booking-form">
+        <div class="form-group">
+            <label for="full-name">탑승객 이름</label>
+            <input type="text" id="full-name" name="full-name" placeholder="홍길동" required>
+        </div>
+
+        <div class="form-group">
+            <label for="birth-date">생년월일</label>
+            <input type="date" id="birth-date" name="birth-date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="passport-number">여권 번호</label>
+            <input type="text" id="passport-number" name="passport-number" placeholder="A12345678" required>
+        </div>
+
+        <div class="form-group">
+            <label for="seat-selection">좌석 선택</label>
+            <select id="seat-selection" name="seat-selection">
+                <option value="economy">이코노미</option>
+                <option value="business">비즈니스</option>
+                <option value="first-class">퍼스트 클래스</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="baggage">추가 수하물</label>
+            <select id="baggage" name="baggage">
+                <option value="none">없음</option>
+                <option value="20kg">20kg 추가</option>
+                <option value="30kg">30kg 추가</option>
+            </select>
+        </div>
+
+        <button type="submit" class="booking-btn">결제 페이지로 이동</button>
+    </form>
+</section>
+
+<script src="../js/booking.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

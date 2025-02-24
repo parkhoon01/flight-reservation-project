@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="/css/user/login.css">
+</head>
+<body>
+<div class="login-container">
+    <h2>로그인</h2>
+    <input type="text" id="username" placeholder="아이디를 입력하세요" required>
+    <input type="password" id="password" placeholder="비밀번호를 입력하세요" required>
+    <button class="login-btn" id="login-btn">로그인</button>
+
+    <!-- 링크 컨테이너 -->
+    <div class="links-container">
+        <a href="find_id.html" id="find-id">아이디 찾기</a>
+        <a href="find_pw.html" id="find-password">비밀번호 찾기</a>
+        <a href="signup.html" id="signup">회원가입</a>
+    </div>
+
+    <!-- 간편 로그인 컨테이너 추가 -->
+    <div class="simple-login-container">
+        <p>간편 로그인</p>
+        <div class="social-icons">
+            <button class="social-btn kakao-login" id="kakao-login">카카오톡</button>
+            <button class="social-btn naver-login" id="naver-login">네이버</button>
+            <button class="social-btn google-login" id="google-login">구글</button>
+        </div>
+    </div>
+</div>
+
+<script src="/js/user/login.js"></script>
+</body>
+</html>

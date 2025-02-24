@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디 찾기</title>
+    <link rel="stylesheet" href="/css/user/find_id.css">
+</head>
+<body>
+<div class="find-id-container">
+    <h2>아이디 찾기</h2>
+
+    <!-- 탭 메뉴 -->
+    <div class="tabs">
+        <button class="tab-btn active" id="phone-tab">휴대폰으로 찾기</button>
+        <button class="tab-btn" id="email-tab">이메일로 찾기</button>
+    </div>
+
+    <!-- 휴대폰 방식 폼 -->
+    <form id="find-id-phone-form" class="form active">
+        <label for="name-phone">이름</label>
+        <input type="text" id="name-phone" name="name-phone" required>
+
+        <label for="phone">휴대폰 번호</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="submit">아이디 찾기</button>
+    </form>
+
+    <!-- 이메일 방식 폼 -->
+    <form id="find-id-email-form" class="form">
+        <label for="name-email">이름</label>
+        <input type="text" id="name-email" name="name-email" required>
+
+        <label for="email">이메일</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">아이디 찾기</button>
+    </form>
+</div>
+
+<script src="/js/user/find_id.js"></script>
+</body>
+</html>
